@@ -1,6 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using symphonyz.Core;
+using symphonyz.Core.Helpers;
 using Symphonyz.Core.Interfaces;
 
 namespace Symphonyz.Core.Tags;
@@ -34,11 +35,6 @@ public class ConsoleAudioTag: IAudioTag
     /// </summary>
     public Task Show(CancellationToken cancellationToken)
     {
-        foreach (var o in Tagged.Metadata)
-        {
-            Console.WriteLine($"{o}");
-        }
-
         return Task.CompletedTask;
     }
 }

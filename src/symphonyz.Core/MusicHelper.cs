@@ -4,10 +4,9 @@ public static class MusicHelper
 {
     public static IEnumerable<Audio> ImportMusicFromDirectory(string path)
     {
-        var files = Directory.EnumerateFiles(path, "*", SearchOption.AllDirectories)
+        return Directory.EnumerateFiles(path, "*", SearchOption.AllDirectories)
             .Where(f => f.EndsWith(".mp3") || 
-                        f.EndsWith(".wav")).ToArray();
-        return files.Select(a=> new Audio(a));
+                        f.EndsWith(".wav")).Select(a => new Audio(a));
     }
 
     public static AudioFormat GetFormat(string path)

@@ -1,4 +1,7 @@
-﻿namespace symphonyz.Core;
+﻿using symphonyz.Core.Helpers;
+using symphonyz.Core.Metadata;
+
+namespace symphonyz.Core;
 
 public class Audio
 {
@@ -12,6 +15,9 @@ public class Audio
         _path = ThrowIfArgument.IsNull(path);
         Format = MusicHelper.GetFormat(path);
         Name = MusicHelper.GetFileName(path);
-        Metadata = metadata ?? new AudioMetadata();
+    }
+    public void SetMetadata(AudioMetadata metadata)
+    {
+        Metadata = metadata;
     }
 }
