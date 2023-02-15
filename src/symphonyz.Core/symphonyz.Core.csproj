@@ -42,16 +42,20 @@
   <ItemGroup>
     <Compile Include="Audio.cs" />
     <Compile Include="AudioFormat.cs" />
+    <Compile Include="Extensions\MetadataExtensions.cs" />
     <Compile Include="GlobalUsings.cs" />
+    <Compile Include="Helpers\MusicHelper.cs" />
     <Compile Include="Helpers\ThrowIfArgument.cs" />
+    <Compile Include="Interfaces\IAlbum.cs" />
     <Compile Include="Interfaces\IAudioTag.cs" />
     <Compile Include="Interfaces\IMetadata.cs" />
     <Compile Include="Interfaces\IMusicCollection.cs" />
     <Compile Include="Metadata\AudioMetadata.cs" />
-    <Compile Include="Metadata\PlaylistMetadata.cs" />
+    <Compile Include="MusicCollections\Album.cs" />
+    <Compile Include="MusicCollections\Base\MusicCollectionBase.cs" />
+    <Compile Include="MusicCollections\EP.cs" />
     <Compile Include="MusicCollections\Playlist.cs" />
     <Compile Include="MusicExtensions.cs" />
-    <Compile Include="MusicHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tags\ConsoleAudioTag.cs" />
   </ItemGroup>

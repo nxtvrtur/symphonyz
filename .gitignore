@@ -1,2 +1,6 @@
 ﻿*.sln
+bin/
+obj/
+debug/
+release/
 

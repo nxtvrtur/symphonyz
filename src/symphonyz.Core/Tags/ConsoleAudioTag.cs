@@ -1,10 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using symphonyz.Core;
 using symphonyz.Core.Helpers;
-using Symphonyz.Core.Interfaces;
+using symphonyz.Core.Interfaces;
 
-namespace Symphonyz.Core.Tags;
+namespace symphonyz.Core.Tags;
 
 /// <summary>
 /// The `ConsoleAudioTag` class represents an audio tag displayed in the console.

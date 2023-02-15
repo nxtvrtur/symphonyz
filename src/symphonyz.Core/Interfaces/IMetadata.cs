@@ -2,7 +2,7 @@
 
 public interface IMetadata
 {
-    IDictionary<string, object> Properties { get; }
-    object GetProperty(string key);
-    void SetProperty(string key, object value);
+    public IDictionary<string, object> Properties { get; }
+    public object GetProperty(string key);
+    public void SetProperty(string key, object value);
 }

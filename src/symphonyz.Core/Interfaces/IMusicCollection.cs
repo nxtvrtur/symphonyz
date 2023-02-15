@@ -1,8 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using symphonyz.Core;
 
-namespace Symphonyz.Core.Interfaces;
+namespace symphonyz.Core.Interfaces;
 
 public interface IMusicCollection
 {
