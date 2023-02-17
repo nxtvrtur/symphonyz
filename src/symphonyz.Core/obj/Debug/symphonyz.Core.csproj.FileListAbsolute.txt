@@ -1,6 +1,0 @@
-C:\Users\User\nxtvrtur source\Symphonyz\src\symphonyz.Core\bin\Debug\symphonyz.Core.dll
-C:\Users\User\nxtvrtur source\Symphonyz\src\symphonyz.Core\bin\Debug\symphonyz.Core.pdb
-C:\Users\User\nxtvrtur source\Symphonyz\src\symphonyz.Core\obj\Debug\symphonyz.Core.csproj.AssemblyReference.cache
-C:\Users\User\nxtvrtur source\Symphonyz\src\symphonyz.Core\obj\Debug\symphonyz.Core.csproj.CoreCompileInputs.cache
-C:\Users\User\nxtvrtur source\Symphonyz\src\symphonyz.Core\obj\Debug\symphonyz.Core.dll
-C:\Users\User\nxtvrtur source\Symphonyz\src\symphonyz.Core\obj\Debug\symphonyz.Core.pdb
