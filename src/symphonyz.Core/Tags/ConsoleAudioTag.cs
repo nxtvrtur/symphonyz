@@ -17,16 +17,16 @@ namespace symphonyz.Core.Tags;
 /// 
 public class ConsoleAudioTag: IAudioTag
 {
-    private Audio Tagged { get; }
+    private Track Tagged { get; }
     
     /// <summary>
     /// Creates a new instance of the `ConsoleAudioTag` class.
     /// </summary>
-    /// <param name="audio">Represents an audio to be tagged.</param>
+    /// <param name="track">Represents an audio to be tagged.</param>
     /// 
-    public ConsoleAudioTag(Audio audio)
+    public ConsoleAudioTag(Track track)
     {
-        Tagged = ThrowIfArgument.IsNull(audio);
+        Tagged = track.ThrowIfNull();
     }
     
     /// <summary>
@@ -34,6 +34,10 @@ public class ConsoleAudioTag: IAudioTag
     /// </summary>
     public Task Show(CancellationToken cancellationToken)
     {
+        foreach (var pair in Tagged.Metadata.Properties)
+        {
+            Console.WriteLine(pair);
+        }
         return Task.CompletedTask;
     }
 }

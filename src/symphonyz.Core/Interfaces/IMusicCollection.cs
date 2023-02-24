@@ -1,11 +1,8 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
+﻿using JetBrains.Annotations;
 
 namespace symphonyz.Core.Interfaces;
-
-public interface IMusicCollection
+public interface IMusicCollection<T> where T : IAudio
 {
-    IList<Audio> Tracks { get; set; }
-    Task AddTrackAsync(Audio audio, CancellationToken cancellationToken);
-    Task RemoveTrackAsync(Audio audio, CancellationToken cancellationToken);
+    [CanBeNull] IList<T> Audios { get; set; }
 }
+

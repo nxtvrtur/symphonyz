@@ -2,11 +2,11 @@
 
 public static class MusicHelper
 {
-    public static IEnumerable<Audio> ImportMusicFromDirectory(string path)
+    public static IEnumerable<Track> ImportMusicFromDirectory(string path)
     {
         return Directory.EnumerateFiles(path, "*", SearchOption.AllDirectories)
             .Where(f => f.EndsWith(".mp3") || 
-                        f.EndsWith(".wav")).Select(a => new Audio(a));
+                        f.EndsWith(".wav")).Select(a => new Track(a));
     }
 
     public static AudioFormat GetFormat(string path)

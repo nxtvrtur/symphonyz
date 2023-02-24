@@ -1,8 +1,7 @@
 ﻿namespace symphonyz.Core.Interfaces;
 
-public interface IMetadata
+public interface IMetadata<TKey, TValue>
 {
-    public IDictionary<string, object> Properties { get; }
-    public object GetProperty(string key);
-    public void SetProperty(string key, object value);
+    public IDictionary<TKey, TValue> Properties { get; }
+
 }

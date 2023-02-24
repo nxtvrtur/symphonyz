@@ -1,28 +1,31 @@
+using FluentAssertions;
+using symphonyz.Core;
+using symphonyz.Core.Helpers;
+using symphonyz.Core.Metadata;
+
 namespace symphonyz.Tests;
 
 public class AudioTests
 {
-  
     [Fact]
-    public void Create_AudioWhenPathIsNotNull()
+    public void Test_ShouldCreateTrackWithDefaultMetadata()
     {
-        
+        var track = new Track("sample.mp3");
+        track.Metadata.Should().BeEquivalentTo(new DefaultMetadata<string, string>());
     }
-
+    //test notnull method
     [Fact]
-    public void Create_AudioWhenPathIsNull()
+    public void NotNull_ShouldThrowException()
     {
+        string? nullStr = null;
+        var act = () => nullStr.ThrowIfNull();
+        act.Should().Throw<ArgumentNullException>();
     }
-
     [Fact]
-    public void Create_AudioWhenMetadataIsNull()
+    public void NotNull_ShouldNotThrowException()
     {
-        
-    }
-
-    [Fact]
-    public void Create_AudioWhenMetadataIsNotNull()
-    {
-        
+        var nullStr = "not null";
+        var act = () => nullStr.ThrowIfNull();
+        act().Should().Be(nullStr);
     }
 }

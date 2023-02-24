@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="src/symphonyz.App/App.axaml" value="src/symphonyz.App/symphonyz.App.csproj" />
+        <entry key="src/symphonyz.App/Views/MainWindow.axaml" value="src/symphonyz.App/symphonyz.App.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
