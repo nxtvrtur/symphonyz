@@ -5,7 +5,7 @@ using symphonyz.Core.Metadata;
 namespace symphonyz.Core;
 
 /// <summary>
-/// Represents an audio file.
+/// Represents a track.
 /// </summary>
 public class Track : IAudio
 {

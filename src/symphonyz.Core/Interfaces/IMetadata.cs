@@ -3,5 +3,4 @@
 public interface IMetadata<TKey, TValue>
 {
     public IDictionary<TKey, TValue> Properties { get; }
-
 }

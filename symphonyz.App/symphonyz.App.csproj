@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\src\symphonyz.Core\symphonyz.Core.csproj" />
+      <ProjectReference Include="..\src\symphonyz.Tests\symphonyz.Tests.csproj" />
+    </ItemGroup>
+
 </Project>

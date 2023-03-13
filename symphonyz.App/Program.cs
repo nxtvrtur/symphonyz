@@ -1,3 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using symphonyz.Core.MusicCollections;
+using symphonyz.Core.MusicCollections.MusicCollectionsInfo;
 
-Console.WriteLine("Hello, World!");
+var album = MusicCollectionBuilder.Build<Album>(new PlaylistInfo());

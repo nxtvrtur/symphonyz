@@ -1,4 +1,4 @@
-namespace symphonyz.Core;
+namespace symphonyz.Core.Enum;
 
 public enum AudioFormat
 {

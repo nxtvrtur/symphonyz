@@ -1,8 +1,8 @@
 ﻿using JetBrains.Annotations;
 
 namespace symphonyz.Core.Interfaces;
-public interface IMusicCollection<T> where T : IAudio
+public interface IMusicCollection
 {
-    [CanBeNull] IList<T> Audios { get; set; }
+    [CanBeNull] IList<IAudio> Audios { get; set; }
 }
 

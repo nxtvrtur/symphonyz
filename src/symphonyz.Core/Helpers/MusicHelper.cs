@@ -1,4 +1,6 @@
-﻿namespace symphonyz.Core.Helpers;
+﻿using symphonyz.Core.Enum;
+
+namespace symphonyz.Core.Helpers;
 
 public static class MusicHelper
 {
